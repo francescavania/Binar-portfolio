@@ -107,6 +107,10 @@ main{
         width: 280px;
     }
 
+    .jumbotron div{
+        text-align: left;
+    }
+
     section{
         text-align: left;
     }
