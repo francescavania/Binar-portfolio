@@ -1,0 +1,118 @@
+:root {
+    --dark: #21243D;
+    --white: #ffffff;
+    --primary: #FF6464;
+  }
+
+*{
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar{
+    background:  var(--white);;
+}
+
+.navbar .navbar-toggler, .navbar .navbar-toggler:focus{
+    border: none;
+    transition: none;
+    box-shadow: none;
+}
+
+.navbar-brand{
+    visibility: hidden;
+}
+
+.nav-link{
+    font-weight: 500!important;
+    color:var(--white)!important;
+}
+
+.navbar-collapse{
+    background-color: var(--dark);
+    padding: 0 8px;
+}
+
+.icon-bar{
+    color: var(--dark);
+}
+
+.jumbotron{
+    padding: 60px 24px 24px 24px;
+}
+
+.jumbotron img{
+    margin: 32px 0 40px 0 ;
+    flex: 0 0 auto;
+    object-fit: cover;
+}
+
+.jumbotron h1{
+    font-weight: 700;
+}
+
+.jumbotron button, .card-body button{
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 2px;
+}
+
+.card-img-top{
+    max-height: 160px;
+}
+
+.card-border{
+    margin-bottom: 24px;
+}
+
+main{
+    background-color: var(--dark);
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.featured-work-title{
+    justify-content: center;
+}
+
+.social-media a i{
+    color: var(--dark);
+}
+@media (min-width:768px) {
+    .navbar-brand{
+        visibility: visible;
+        width: 142px;
+        height: 42px;
+        background-color: var(--dark);
+    }
+    .navbar-collapse{
+        background-color: var(--white);
+    }
+    .nav-link{
+        color:var(--dark)!important;
+    }
+    .jumbotron{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       height: 100vh;
+       gap: 80px;
+    }
+
+    .jumbotron img{
+        height: 280px;
+        width: 280px;
+    }
+
+    section{
+        text-align: left;
+    }
+
+    .featured-work-title{
+        font-size: 22px;
+        justify-content: flex-start;
+    }
+ }
